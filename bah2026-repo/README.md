@@ -268,7 +268,9 @@ Name notebooks with a number prefix to keep them ordered:
 - [ISRO Official Site](https://www.isro.gov.in/)
 - [Mosdac Data Portal](https://www.mosdac.gov.in/) — ISRO satellite data
 - [Bhuvan Portal](https://bhuvan.nrsc.gov.in/) — ISRO geo-platform
-
+### PS7
+- [AstroNet-Vetting: A Neural Network for TESS Light Curve Vetting](https://github.com/yuliang419/Astronet-Vetting)
+- [Machine learning models and utilities for exoplanet science](https://github.com/google-research/exoplanet-ml)
 ---
 
 ## 📝 Notes & Decisions
