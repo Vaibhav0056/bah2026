@@ -1,0 +1,28 @@
+# Core
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scipy
+
+# Deep Learning (uncomment as needed)
+# torch
+# torchvision
+# tensorflow
+
+# Geospatial / Remote Sensing
+# rasterio
+# geopandas
+# shapely
+# earthpy
+
+# Notebook
+jupyter
+ipykernel
+
+# Utilities
+tqdm
+Pillow
+requests
+pyyaml
