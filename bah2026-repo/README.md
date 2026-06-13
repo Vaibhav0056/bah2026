@@ -1,26 +1,13 @@
 # 🚀 Bharatiya Antariksh Hackathon 2026
 
-> **Team Name:** [Your Team Name]
-> **Problem Statement:** [Update once decided]
 > **Event:** [Bharatiya Antariksh Hackathon 2026 by ISRO × Hack2Skill](https://hack2skill.com/event/bah2026/)
 
 ---
-
-## 👥 Team Members
-
-| Name | Role | GitHub |
-|------|------|--------|
-| Member 1 | [e.g. ML Engineer] | [@username](https://github.com/username) |
-| Member 2 | [e.g. Data Analyst] | [@username](https://github.com/username) |
-| Member 3 | [e.g. Backend Dev] | [@username](https://github.com/username) |
 
 ---
 
 ## 📌 Problem Statement
 
-> _(Update this section once your team finalises the challenge)_
-
-Brief description of the problem you're solving, what data/tools are involved, and the expected output.
 
 ---
 
@@ -57,7 +44,7 @@ bah2026/
 
 ---
 
-## ⚙️ Setup — Get Started in 5 Minutes
+## ⚙️ Setup
 
 ### 1. Clone the Repository
 
@@ -99,7 +86,7 @@ Then open any notebook from the `notebooks/` folder.
 
 ### First Time Setup
 
-1. **Fork** or **clone** this repo (team members get direct access via invite).
+1. **Fork** or **clone** this repo (You get direct access via invite).
 2. Always create a **new branch** before making changes.
 
 ### Branching Convention
