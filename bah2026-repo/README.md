@@ -4,10 +4,7 @@
 
 ---
 
----
-
 ## 📌 Problem Statement
-
 
 ---
 
@@ -49,7 +46,7 @@ bah2026/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bah2026.git
+git clone https://github.com/Vaibhav0056/bah2026.git
 cd bah2026
 ```
 
@@ -82,56 +79,162 @@ Then open any notebook from the `notebooks/` folder.
 
 ---
 
-## 🧠 How to Contribute (Team Guide)
+## 🤝 Team Collaboration Guide (Read Before You Touch Anything!)
 
-### First Time Setup
+### ⚡ Golden Rules
 
-1. **Fork** or **clone** this repo (You get direct access via invite).
-2. Always create a **new branch** before making changes.
+1. **NEVER push directly to `main`**
+2. **ALWAYS pull before you start working**
+3. **ALWAYS work on your own branch**
+4. **ALWAYS write a clear commit message**
 
-### Branching Convention
+---
+
+### 🌿 Branch Structure
 
 ```
-main          → stable, working code only
-dev           → ongoing work, merge here first
-feature/name  → your personal branch for a specific task
+main        → final, working code only (no direct pushes)
+dev         → combines everyone's work (merge here first)
+your-name   → your personal working branch
 ```
 
-**Example:**
+---
+
+### 🚀 Daily Workflow (Follow This Every Day)
+
+#### 1. Before Starting Work — Always Pull First
 ```bash
-git checkout -b feature/data-preprocessing
+git checkout dev          # switch to dev branch
+git pull origin dev       # get latest changes from teammates
 ```
 
-### Making Changes
-
+#### 2. Switch to Your Own Branch
 ```bash
-# 1. Pull latest changes first
-git pull origin dev
+git checkout your-name    # e.g. git checkout vaibhav
+```
+> First time only — create your branch:
+> ```bash
+> git checkout -b your-name
+> ```
 
-# 2. Make your changes...
+#### 3. Make Your Changes
+Edit files, write code, add notebooks — do your work.
 
-# 3. Stage and commit
+#### 4. Save & Push Your Work
+```bash
 git add .
-git commit -m "feat: add cloud mask preprocessing script"
-
-# 4. Push your branch
-git push origin feature/data-preprocessing
-
-# 5. Open a Pull Request on GitHub → merge into dev
+git commit -m "feat: describe what you did"
+git push origin your-name
 ```
 
-### Commit Message Tips
+#### 5. Merge Into Dev (When Your Work is Ready)
+```bash
+git checkout dev
+git pull origin dev                  # pull latest dev again
+git merge your-name                  # merge your branch into dev
+git push origin dev                  # push merged dev to GitHub
+git checkout your-name               # go back to your branch
+```
 
-Use a short prefix to describe the type of change:
+---
 
-| Prefix | Use for |
-|--------|---------|
-| `feat:` | New feature or file |
-| `fix:` | Bug fix |
-| `data:` | Data-related changes |
-| `docs:` | Documentation updates |
-| `test:` | Adding tests |
-| `refactor:` | Code cleanup |
+### 🔁 End of Day Checklist
+
+- [ ] Pushed your branch to GitHub
+- [ ] Merged into `dev` if feature is complete
+- [ ] Told teammates in the group chat what you changed
+
+---
+
+### ⚔️ How to Handle Merge Conflicts
+
+A conflict happens when two people edit the **same line** of the same file.
+
+Git will mark the conflict in the file like this:
+```
+<<<<<<< your-name
+your version of the line
+=======
+teammate's version of the line
+>>>>>>> dev
+```
+
+**To fix it:**
+1. Open the file — find all `<<<<<<<` markers
+2. Decide which version to keep (or combine both)
+3. Delete the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`)
+4. Save the file, then:
+```bash
+git add .
+git commit -m "fix: resolved merge conflict in filename"
+git push origin your-name
+```
+
+> 💡 **Best way to avoid conflicts:** Always pull before starting, and don't
+> edit the same file as a teammate at the same time.
+
+---
+
+### 🚫 Never Do These
+
+```bash
+git push origin main        # ❌ never push directly to main
+git push --force            # ❌ never force push (destroys teammates' work)
+git commit -m "changes"     # ❌ never write vague commit messages
+```
+
+### ✅ Always Do These
+
+```bash
+git pull origin dev         # ✅ pull before starting
+git status                  # ✅ check what files changed before committing
+git log --oneline           # ✅ see recent commits
+```
+
+---
+
+### 📋 Commit Message Format
+
+```
+type: short description of what you did
+```
+
+| Type | When to use |
+|------|-------------|
+| `feat:` | Added something new |
+| `fix:` | Fixed a bug |
+| `docs:` | Updated README or docs |
+| `data:` | Added or changed data files |
+| `refactor:` | Cleaned up code |
+| `test:` | Added tests |
+
+**Examples:**
+```bash
+git commit -m "feat: added cloud mask preprocessing function"
+git commit -m "fix: corrected null values in dataset loader"
+git commit -m "docs: added setup instructions to README"
+```
+
+---
+
+### 🆘 Messed Something Up?
+
+| Problem | Fix |
+|---------|-----|
+| Committed wrong file | `git reset HEAD~1` |
+| Want to discard all local changes | `git checkout -- .` |
+| Pushed to wrong branch | Tell the team lead immediately |
+| Conflict you can't resolve | Don't panic — call a teammate |
+
+---
+
+### 📞 Before Pushing — Quick Sanity Check
+
+```bash
+git status          # see what's changed
+git diff            # see exact line changes
+git log --oneline   # see your recent commits
+```
 
 ---
 
