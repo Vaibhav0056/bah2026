@@ -40,6 +40,41 @@ bah2026/
 ```
 
 ---
+# Bharatiya Antariksh Hackathon 2026 — Problem Statement Analysis
+
+**Organizer:** ISRO × Hack2skill &nbsp;·&nbsp; **Format:** 30-hour grand finale, teams of 3–4 (students only, India) &nbsp;·&nbsp; [Event page](https://hack2skill.com/event/bah2026)
+
+Technical categorization of all 15 problem statements — tech domain, AI/ML flavor, expected outcome, and indicative tech stack.
+
+## Problem Statements
+
+| # | Challenge | Tech category | AI/ML sub-field | Expected outcome | Indicative tech stack |
+|---|-----------|---------------|-----------------|------------------|-----------------------|
+| 1 | Urban heat mitigation & cooling strategies | Geospatial / thermal remote sensing + optimization | Predictive regression + spatial optimization | UHI risk map + engine ranking cooling interventions by impact-per-cost | Python, Google Earth Engine, rasterio/GDAL, GeoPandas, XGBoost/Random Forest, spatial optimizer, Leaflet/Mapbox |
+| 2 | Cloud removal & reconstruction for LISS-IV imagery | Computer vision | Generative AI (GAN / diffusion, inpainting) | Cloud-free reconstructed imagery with PSNR/SSIM + spectral fidelity | PyTorch, conditional GANs (pix2pix/SPADE) or diffusion, Sentinel-1 SAR–optical fusion |
+| 3 | Surface AQI & HCHO hotspot identification | Environmental geospatial analytics | ML regression + spatial analysis | Gridded surface AQI maps + hotspot detector validated vs ground stations | Python, xarray/netCDF, TROPOMI + ERA5 + CPCB data, gradient boosting / NN regression, DBSCAN / Getis-Ord |
+| 4 | Road extraction + graph criticality analysis | Computer vision + graph theory | Semantic segmentation + network analysis | Occlusion-robust road map + ranked critical links for resilience | PyTorch (U-Net/D-LinkNet), OpenStreetMap, NetworkX/graph-tool, GeoPandas |
+| 5 | Digital twin of India's climate | Climate / Earth-system modeling | Physics-informed ML / spatiotemporal forecasting | Interactive twin forecasting & simulating regional climate variables | PyTorch, neural operators (FNO) or graph/transformer models, xarray, IMD/MOSDAC + reanalysis, GPU |
+| 6 | Crop type, moisture stress & irrigation advisory | Agricultural remote sensing | Multimodal (optical + SAR) fusion + time-series classification | Crop-type maps, per-field stress flags, stage-aware irrigation advice | Google Earth Engine, Python, 1D-CNN/LSTM/Transformer or Random Forest, NDVI/NDWI + SAR backscatter |
+| 7 | Exoplanet detection from noisy light curves | Astronomy / signal processing | Time-series classification + denoising | Transit-candidate detector with low false-positive rate on noisy curves | Python, astropy + lightkurve, Box Least Squares, 1D-CNN/transformer, GP / wavelet detrending |
+| 8 | Lunar subsurface ice detection (Chandrayaan-2) | Planetary remote sensing (SAR) + path planning | SAR classification + traverse planning | Ice-probability map + safe rover traverse routes | SAR processing (circular polarization ratio), Python, ML classification, DEM/slope, A*/RRT* planning |
+| 9 | Wavefront reconstruction & turbulence (SH-WFS) | Adaptive optics / signal processing | Classical reconstruction (+ optional CNN) | Faster/accurate wavefront reconstruction + turbulence stats (r₀, Cₙ²) | Python, NumPy/SciPy, Zernike & zonal reconstructors, least-squares, optional CNN, FFT analysis |
+| 10 | Infrared image colorization & enhancement | Computer vision | Generative image-to-image translation | Colorized, enhanced IR validated on detection/recognition | PyTorch, pix2pix/CycleGAN or diffusion, paired IR–visible data, perceptual + SSIM losses |
+| 11 | Cross-modal satellite image retrieval | Computer vision + multimodal learning | Contrastive / cross-modal representation learning | Modality-agnostic retrieval engine measured by recall@k | PyTorch, CLIP-style dual encoders (InfoNCE/triplet), FAISS, SAR + optical data |
+| 12 | Temporal resolution enhancement (frame interpolation) | Computer vision (video) | Optical flow + frame synthesis | Plausible interpolated scenes between passes, validated vs held-out dates | PyTorch, optical flow (RAFT) + RIFE/FILM synthesis, warping + refinement nets |
+| 13 | Air-gapped predictive copilot for MPLS operations | Networking / AIOps / secure systems | On-prem LLM + RAG + anomaly detection | Self-hosted predictive-maintenance assistant + RAG over runbooks/telemetry | Local LLMs (Llama/Mistral/Qwen), local vector DB + RAG, anomaly detection (Isolation Forest/autoencoders), air-gapped deploy |
+| 14 | Radiation environment forecasting for GEO satellites | Space weather / time-series | Sequence forecasting (LSTM / Transformer) | Lead-time particle-flux forecasts with uncertainty | Python, GOES/OMNI solar-wind + Kp/Dst, LSTM/Temporal-CNN/Transformer, physics-informed features |
+| 15 | Solar flare forecasting / nowcasting (Aditya-L1) | Space weather / time-series | Multimodal time-series forecasting | Flare probability/intensity nowcaster with lead time + C/M/X class | Python, X-ray time-series, dual-branch LSTM/Transformer, anomaly detection, class-imbalance handling |
+
+## Thematic Clusters
+
+- **EO computer vision & image generation** — 2, 4, 10, 11, 12
+- **EO geospatial & environmental analytics** — 1, 3, 5, 6
+- **Astronomy & space-weather time-series** — 7, 14, 15 (plus 9 as optics-flavored signal processing)
+- **Planetary science** — 8
+- **Networking / secure AIOps** (outlier) — 13
+
+The computer-vision / generative cluster is the most crowded and "hackathon-default." The optics (9), planetary-SAR (8), and MPLS copilot (13) statements are the most differentiated and least likely to be over-subscribed.
 
 ## ⚙️ Setup
 
@@ -284,4 +319,3 @@ Use this section to log important team decisions:
 
 ---
 
-*Made with ❤️ for BAH 2026 — Team [Your Team Name]*
