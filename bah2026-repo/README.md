@@ -42,10 +42,8 @@ bah2026/
 ---
 # Bharatiya Antariksh Hackathon 2026 — Problem Statement Analysis
 
-**Organizer:** ISRO × Hack2skill &nbsp;·&nbsp; **Format:** 30-hour grand finale, teams of 3–4 (students only, India) &nbsp;·&nbsp; [Event page](https://hack2skill.com/event/bah2026)
 
-Technical categorization of all 15 problem statements — tech domain, AI/ML flavor, expected outcome, and indicative tech stack.
-
+Technical categorization of all 15 problem statements 
 ## Problem Statements
 
 | # | Challenge | Tech category | AI/ML sub-field | Expected outcome | Indicative tech stack |
